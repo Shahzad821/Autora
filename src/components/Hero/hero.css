@@ -1,0 +1,37 @@
+.Hero {
+  background-image: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("../../assets/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.Hero span {
+  font-size: 15px;
+  font-weight: 600;
+  color: azure;
+}
+.Hero h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+  .Hero h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  .Hero span {
+    font-size: 14px;
+  }
+}

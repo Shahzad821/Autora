@@ -1,0 +1,125 @@
+.blog {
+  padding: 50px 0 0px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/hero.jpg);
+
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.blog-posts {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.blog-post div {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.blog-icon {
+  color: rgb(241, 189, 37);
+  font-size: 30px;
+}
+.blog-post p {
+  font-size: 15px;
+  color: rgb(179, 179, 179);
+  margin-bottom: 50px;
+}
+.blog-post span {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.blog-post span::before {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(241, 189, 37);
+  top: -50%;
+  width: 100%;
+  left: 0;
+}
+.details {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.clipped-original {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(241, 189, 37);
+  clip-path: polygon(0 0, 70% 0, 60% 100%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start; /* Aligns text to the left center */
+  align-items: center;
+  padding-left: 30px; /* Adjust padding as needed */
+}
+
+.clipped-original p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.clipped-line {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end; /* Aligns text to the right center */
+  align-items: center;
+  padding-right: 30px; /* Adjust padding as needed */
+}
+
+.clipped-line span {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  padding: 0 10px;
+}
+@media (max-width: 800px) {
+  .clipped-original p {
+    font-size: 17px;
+  }
+  .details {
+    width: 100%;
+    height: 50px;
+  }
+  .clipped-line span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .clipped-original {
+    padding-left: 0;
+  }
+  .clipped-original p {
+    font-size: 13px;
+  }
+  .clipped-line {
+    padding-right: 0px;
+  }
+  .clipped-line span {
+    font-size: 12px;
+  }
+}

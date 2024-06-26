@@ -1,0 +1,87 @@
+.about {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+.about h3 {
+  font-size: 30px;
+  font-weight: 650;
+}
+.about p {
+  font-size: 15px;
+  color: rgb(179, 179, 179);
+}
+.about .icon {
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: rgb(179, 179, 179);
+  color: rgb(241, 189, 37);
+}
+.about div h5 {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.about div h5::after {
+  margin-bottom: 40px;
+  content: "";
+  position: absolute;
+  top: 120%;
+  width: 20%;
+  border: 1px solid rgb(179, 179, 179);
+}
+/* Second section */
+.aboutAtoura {
+  background-color: #eaeaec;
+}
+.aboutAtoura h4 {
+  font-size: 30px;
+  color: black;
+  font-weight: 650;
+  border-width: 20px;
+  position: relative;
+}
+.aboutAtoura h4::after {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid rgb(241, 189, 37);
+  width: 90px;
+  left: 0;
+  top: 120%;
+  border-radius: 10px;
+}
+.aboutAtoura img {
+  background-color: rgb(218, 221, 226);
+}
+.aboutAtoura .aboutSection {
+  padding-left: 40px;
+}
+.aboutAtoura .aboutSection p {
+  font-size: 15px;
+}
+.aboutAtoura .aboutSection span::before {
+  content: "\2713"; /* Unicode for checkmark symbol */
+  color: rgb(241, 189, 37);
+  font-size: 20px; /* Adjust size as needed */
+  font-weight: bold; /* Ensure it's visible */
+}
+@media (max-width: 600px) {
+  .aboutAtoura {
+    flex-direction: column;
+  }
+  .aboutAtoura img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutAtoura .aboutSection {
+    width: 100%;
+    padding-left: 24px;
+  }
+  .about {
+    padding: 10px 0;
+  }
+}
